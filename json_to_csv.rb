@@ -16,8 +16,10 @@ CSV.open('jateng/csv/dana_jateng.csv', 'w') do |csv|
         records.each do |record|
           csv << [
             record[:kode_PUM], record[:provinsi], record[:kabupaten_kota], record[:kecamatan], record[:desa_kelurahan], file.split('/').last.gsub('.json', ''), record[:pagu], record[:total_penyaluran],
-            record[:penyaluran][:'1'][:realisasi], record[:penyaluran][:'1'][:tanggal_realisasi], record[:penyaluran][:'2'][:realisasi], record[:penyaluran][:'2'][:tanggal_realisasi],
-            record[:penyaluran][:'3'][:realisasi], record[:penyaluran][:'3'][:realisasi], file
+            record[:penyaluran][:'1'][:realisasi], record[:penyaluran][:'1'][:tanggal_realisasi], 
+            record[:penyaluran][:'2'][:realisasi], record[:penyaluran][:'2'][:tanggal_realisasi],
+            record[:penyaluran][:'3'][:realisasi], record[:penyaluran][:'3'][:tanggal_realisasi],
+            file
           ]
         end
       end
