@@ -1,7 +1,7 @@
 require 'json'
 require 'csv'
 
-CSV.open('jateng/csv/dana_jateng.csv', 'w') do |csv|
+CSV.open('jateng/csv/25022022_dana_jateng.csv', 'w') do |csv|
   csv << [
     'kode_PUM', 'provinsi', 'kabupaten_kota', 'kecamatan', 'desa_kelurahan', 'tahun', 'pagu', 'total_penyaluran',
     'penyaluran_1_realisasi', 'penyaluran_1_tanggal_realisasi', 'penyaluran_2_realisasi', 'penyaluran_2_tanggal_realisasi',
